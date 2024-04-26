@@ -1,0 +1,799 @@
+.light-grey {
+    color: #737373 !important;
+}
+
+.c7 {
+    color: #c7c7c7 !important;
+}
+
+
+.f-size-14 {
+    font-size: 14px !important;
+}
+
+.f-size-12 {
+    font-size: 12px !important;
+}
+
+.border-b {
+    border-bottom: 1px solid #dbdbdb !important;
+}
+
+.color-db {
+    color: #dbdbdb !important;
+}
+
+.p-14 {
+    padding: 14px !important;
+}
+
+/*                                                         THIS IS BODY CSS                                  */
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+    margin: 0 auto;
+}
+
+
+
+
+/*                                                 THIS IS BODY FIRST CHILD CSS                               */
+
+.body-first-child {
+    border-right: 1px solid #dbdbdb;
+    background-color: white;
+    padding: 15px 12px;
+    width: 245px;
+    height: 100vh;
+    transition: all .3s ease-in-out !important;
+}
+
+.body-first-child-main {
+    width: 245px;
+}
+
+.insta-logo-main-div {
+    padding: 12px;
+    margin: 13px 0px 22px 0px;
+}
+
+.child-first-tab {
+    padding: 12px;
+    margin: 6px 0px;
+    transition: all .3s ease-in-out !important;
+}
+
+.tab-icon {
+    transition: all .3s ease-in-out;
+}
+
+.child-first-tab:hover .tab-icon {
+    scale: 1.1;
+    transition: all .3s ease-in-out;
+}
+
+.child-first-tab:hover {
+    background-color: #f5f5f5;
+    transition: all .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.profile-img-div {
+    width: 25px;
+    height: 25px;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.child-first-tab:hover .profile-img {
+    scale: 1.1;
+    transition: all .3s ease-in-out;
+}
+
+/*                                                  THIS IS SEARCH DROPDOWN CSS                                */
+
+.search-dropdown {
+    position: relative;
+    display: block;
+}
+
+.search-dropdown-data {
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+    border-right: 1px solid #dbdbdb;
+    border-radius: 0px 20px 20px 0px;
+    transform: translateX(-400px);
+    position: absolute;
+    top: -150px;
+    right: -13px;
+    z-index: 9;
+    transition: all .3s ease-in-out;
+}
+
+.search-input-div {
+    height: 40px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 16px 0px 40px;
+}
+
+.search-icon-input {
+    font-size: 15px;
+    color: #8f8f8f;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+
+
+}
+
+.search-input-div:has(.search-input:focus) .search-icon-input {
+    display: none;
+}
+
+.search-input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0px 16px;
+}
+
+.search-input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+.search-clear-icon {
+    font-size: 10px;
+    color: white;
+}
+
+.search-clear-icon-div {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #c8c8c8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    visibility: hidden;
+}
+
+.search-input-div:has(.search-input:focus) .search-clear-icon-div {
+    visibility: visible;
+}
+
+.search-box {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.insta-logo-main-div:has(.insta-logo-icon-div:hover) {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.insta-logo-icon-div:hover {
+    scale: 1.1;
+    transition: all .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.body-first-child:has(#select-search:checked) .home-icon {
+    stroke-width: 2px;
+    fill: transparent;
+}
+
+.body-first-child:has(#select-search:checked) .search-icon-path {
+    stroke-width: 3px;
+}
+
+.body-first-child:has(#select-search:checked) .search-tab {
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+}
+
+.body-first-child:has(#select-search:checked) .search-dropdown-data {
+    transform: translateX(400px);
+    transition: all .3s ease-in-out;
+}
+
+
+.body-first-child:has(#select-search:checked) .insta-logo-icon-div {
+    display: block !important;
+}
+
+.body-first-child:has(#select-search:checked) .tab-text {
+    display: none;
+}
+
+.body-first-child:has(#select-search:checked) {
+    width: fit-content;
+    transition: all .3s ease-in-out !important;
+}
+
+/*                                             THIS IS NOTIFICATION DROPDOWN CSS                               */
+
+.notification-dropdown {
+    position: relative;
+}
+
+.notification-dropdown-data {
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+    border-right: 1px solid #dbdbdb;
+    transform: translateX(-400px);
+    position: absolute;
+    top: -374px;
+    right: -13px;
+    z-index: 9;
+    transition: all .3s ease-in-out;
+    overflow-y: scroll;
+}
+
+.body-first-child:has(#select-notification:checked) .notification-dropdown-data {
+    transform: translateX(400px);
+    transition: all .3s ease-in-out;
+}
+
+.body-first-child:has(#select-notification:checked) {
+    width: fit-content;
+    transition: all .3s ease-in-out !important;
+}
+
+.body-first-child:has(#select-notification:checked) .tab-text {
+    display: none;
+}
+
+.body-first-child:has(#select-notification:checked) .home-icon {
+    stroke-width: 2px;
+    fill: transparent;
+}
+
+.notification-icon {
+    fill: transparent;
+}
+
+.notification-icon-path {
+    stroke-width: 2px;
+    fill: black;
+}
+
+.body-first-child:has(#select-notification:checked) .notification-icon {
+    fill: black;
+}
+
+.body-first-child:has(#select-notification:checked) .insta-logo-icon-div {
+    display: block !important;
+}
+
+.body-first-child:has(#select-notification:checked) .notification-tab {
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+}
+
+.w-190 {
+    width: 190px !important;
+}
+
+.follow-btn {
+    width: 80px !important;
+}
+
+/*                                                THIS IS CREATE POST DROPDOWN CSS                             */
+
+.create-dropdown-data {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.585);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+    display: none;
+}
+
+.create-post {
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.create-post-content {
+    height: 400px;
+}
+
+.create-post-head {
+    height: 50px;
+}
+
+.body-first-child:has(#select-create:checked) .create-dropdown-data {
+    display: block;
+}
+
+/*                                                  THIS IS MORE OPTION DROPDOWN CSS                           */
+
+.option-dropdown {
+    position: relative;
+}
+
+.option-dropdown-data {
+    width: 260px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 20px rgb(219, 219, 219);
+    position: absolute;
+    bottom: 55px;
+    z-index: 25;
+    display: none;
+}
+
+.option-dropdown-tab {
+    transition: all .3s ease-in-out;
+}
+
+.option-dropdown-tab-center {
+    background-color: #f4f4f4;
+    height: 6px;
+}
+
+.option-dropdown-tab:hover {
+    background-color: #f5f5f5;
+    transition: all .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.body-first-child:has(#select-more:checked) .option-dropdown-data {
+    display: block;
+}
+
+.body-first-child:has(#select-more:checked) .more-text {
+    font-weight: bold;
+}
+
+.body-first-child:has(#select-more:checked) .more-icon {
+    stroke-width: 3px;
+}
+
+.body-first-child:has(#select-more:checked) .home-icon {
+    stroke-width: 2px;
+    fill: transparent;
+}
+
+.body-first-child:has(#select-more:checked) .tab-text {
+    font-weight: normal !important;
+}
+
+/*                                                 THIS IS APPEREANCE DROPDOWN CSS                              */
+
+#dark {
+    display: none;
+}
+
+.appearance-dropdown label {
+    display: block !important;
+}
+
+.appearance-dropdown-data {
+    width: 260px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 20px rgb(219, 219, 219);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 30;
+    display: none;
+}
+
+.button-track {
+    height: 16px;
+    width: 28px;
+    border-radius: 20px;
+    background-color: #dbdbdb;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+.button-switch {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.appearance-dropdown-tab:hover {
+    background-color: #f5f5f5;
+    transition: all .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.appearance-dropdown-tab {
+    transition: all .3s ease-in-out;
+}
+
+.appearance-dropdown-data:has(#dark-color:checked) .button-switch {
+    transform: translateX(100%);
+    transition: all .3s ease-in-out;
+}
+
+.appearance-dropdown-data:has(#dark-color:checked) .button-track {
+    background-color: #0a99f6;
+    transition: all .3s ease-in-out;
+}
+
+
+.appearance-dropdown:has(#dark:checked) .appearance-dropdown-data {
+    display: block;
+    visibility: visible;
+}
+
+.option-dropdown:has(#dark:checked) .option-dropdown-data {
+    visibility: hidden;
+    transition: all .0s ease-in-out;
+}
+
+.option-dropdown:has(#dark:checked) .option-dropdown-tab {
+    transition: all .0s ease-in-out;
+}
+
+
+/*                                           THIS IS REPORT PROBLEM DROPDOWN CSS                                */
+
+.report-dropdown-data {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.585);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 33;
+    display: none;
+}
+
+.report-dropdown-menu {
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.report-dropdown-menu-div {
+    width: 100%;
+    height: 100%;
+}
+
+.write-message {
+    width: 100%;
+    height: 130px;
+    padding: 6px;
+    border: 1px solid #dbdbdb;
+}
+
+.write-message:focus {
+    border: 1px solid #dbdbdb;
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+.btn-secondary {
+    background-color: #efefef !important;
+    border: 1px solid #efefef !important;
+}
+
+.btn-secondary:hover {
+    background-color: #dcdcdc !important;
+}
+
+.report-dropdown:has(#report:checked) .report-dropdown-data {
+    display: block;
+}
+
+/*                                             THIS IS SWITCH ACCOUNT DROPDOWN                                   */
+
+.account-dropdown-data {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.585);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 33;
+    display: none;
+}
+
+.account-dropdown-menu {
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.user-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.user-img-div {
+    width: 55px;
+    height: 55px;
+}
+
+.your-account {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: #0a99f6;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-dropdown:has(#account-drop:checked) .account-dropdown-data {
+    display: block;
+}
+
+
+
+/*                                                   THIS IS BODY CHILD 2 CSS                                  */
+
+.body-second-child {
+    padding-top: 22px;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+/*                                                     THIS IS POST CSS                                    */
+
+.body-child1-main-div {
+    width: 630px;
+}
+
+.user-icon-div {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgb(223 223 223);
+}
+
+.user-icon {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.user-name {
+    font-size: 14px;
+}
+
+.post-time {
+    color: #737373;
+}
+
+.user-name-center {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #737373;
+}
+
+.about-post {
+    font-size: 12px;
+    color: black;
+}
+
+.post-div {
+    width: 470px;
+
+}
+
+.posts-main-div {
+    width: 630px;
+}
+
+.post-body {
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.post-img {
+    width: 80%;
+    height: 100%;
+}
+
+.post-foot {
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+}
+
+.post-foot-icon:hover {
+    color: #8d8d8d !important;
+    fill: #8d8d8d !important;
+}
+
+.tag-icon:hover {
+    color: #6a6a6a !important;
+    fill: #6a6a6a !important;
+}
+
+.post-like {
+    font-size: 14px;
+}
+
+.user-id-name {
+    font-size: 14px;
+}
+
+.all-comment {
+    font-size: 14px;
+    color: #737373 !important;
+}
+
+.comment-box {
+    height: 20px;
+    width: 100%;
+    font-size: 14px;
+    border: none;
+}
+
+.comment-box:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.face-icon {
+    font-size: 14px;
+    color: #737373 !important;
+}
+
+.face-icon:hover {
+    color: #c5c5c5 !important;
+}
+
+.post-video {
+    height: 100%;
+    width: 100%;
+}
+
+.body-second-child2-main-div {
+    width: 320px;
+    margin-left: 70px;
+    height: 100vh;
+}
+
+.my-profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.my-profile-img-div {
+    width: 45px;
+    height: 45px;
+}
+
+.profile-name-div {
+    font-size: 14px;
+}
+
+.profile-link {
+    font-size: 12px;
+    color: #0a99f6;
+}
+
+/*                                                  THIS IS INSTA STORY CSS                                     */
+.story-img-bg-div {
+    background: linear-gradient(45deg, #ffa95f 5%, #f99c4a 15%,
+            #f47838 30%, #e75157 45%, #d92d7a 70%, #cc2a92 80%, #c32e92 95%);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.story-img-div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+}
+
+.story-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.story-text {
+    font-size: 12px;
+}
+
+.carousel-control-prev {
+    width: 30px !important;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 18px;
+    left: -30px;
+}
+
+.next-icon {
+    width: 30px;
+    height: 30px;
+    background-color: white !important;
+    border-radius: 50%;
+    box-shadow: 0px 1px 4px rgb(159, 159, 159);
+}
+
+.carousel-control-next {
+    width: 30px !important;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 18px;
+    right: -30px;
+}
+
+.carousel .slide {
+    position: relative;
+}
+
+.see-all:hover {
+    color: rgb(161, 161, 161) !important;
+}
+
+.request-user-icon-div {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(223 223 223);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.request-user-icon {
+    font-size: 25px;
+    color: white !important;
+}
+
+.follow:hover {
+    color: rgb(17, 35, 128) !important;
+}
+
+.child2-foot-link:hover {
+    text-decoration: underline !important;
+}
+
